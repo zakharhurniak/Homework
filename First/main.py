@@ -21,7 +21,7 @@ def fibonacci_with_steps(params):
 
 
 if __name__ == "__main__":
-    with open('input.txt', 'r') as file:
+    with open('resources/input.txt', 'r') as file:
         lines = file.readlines()
         params_limit = list(map(int, lines[0].strip().split()))
         params_steps = list(map(int, lines[1].strip().split()))
@@ -35,5 +35,5 @@ if __name__ == "__main__":
                     f"Послідовність з кроками:\n"
                     f"{fib_steps}\n")
 
-    with open('output.txt', 'w') as file:
+    with open('resources/output.txt', 'w') as file:
         file.write(output_data)
